@@ -1,0 +1,54 @@
+:root {
+  --_clr-white: #fff;
+  --_clr-green-900: #1f413d;
+  --_clr-green-400: #d6ef0e;
+  --_clr-blue-900: #090f1d;
+  --_clr-blue-800: #131e3a;
+
+  /* context tokens */
+  --_clr-accent: var(--_clr-green-400);
+  --_clr-decor-: var(--_clr-green-900);
+  --_clr-neutral-100: var(--_clr-white);
+  --_clr-neutral-800: var(--_clr-blue-800);
+  --_clr-neutral-900: var(--_clr-blue-900);
+
+  /* object tokens */
+  --clr-bg: var(--_clr-neutral-900);
+  --clr-fg: var(--_clr-neutral-100);
+  --clr-accent: var(--_clr-accent);
+
+  /* font sizes */
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: clamp(1.25rem, 1.1675rem + 0.3518vw, 1.5rem);
+  --fs-800: clamp(2rem, 1.6702rem + 1.4072vw, 3rem);
+  --fs-900: clamp(2.5rem, 2.0053rem + 2.1108vw, 4rem);
+
+  /* font weigt */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* other globals */
+  --gutter: clamp(0.5rem, 0.1702rem + 1.4072vw, 1.5rem);
+  --section-padding-block: clamp(2.5rem, 1.4281rem + 4.5734vw, 5.75rem);
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --ff-primary: 'Jost', serif;
+  --ff-accent: 'Chonburi', serif;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+  color: var(--clr-fg);
+  text-rendering: optimizelegibility;
+
+  background-color: var(--clr-bg);
+
+  font-synthesis: none;
+}

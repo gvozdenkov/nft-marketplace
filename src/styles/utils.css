@@ -1,0 +1,7 @@
+.flow > *:where(:not(:first-child)) {
+  margin-block-start: var(--flow-spacer, 0.625rem);
+}
+
+.bold {
+  font-weight: 700;
+}
