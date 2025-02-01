@@ -1,0 +1,38 @@
+.primary-header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-block: 2.5rem;
+
+  background-color: var(--clr-bg);
+}
+
+nav > ul {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 0;
+
+  a {
+    padding: 0;
+    font-weight: var(--fw-400);
+    color: color-mix(in srgb, var(--clr-fg) 70%, transparent);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--clr-fg);
+      background-color: transparent;
+    }
+
+    &[aria-current='page'] {
+      color: var(--clr-fg);
+      text-decoration: underline;
+      text-decoration-color: var(--clr-accent);
+      text-underline-offset: 0.5em;
+    }
+  }
+}

@@ -5,3 +5,32 @@
 .bold {
   font-weight: 700;
 }
+
+.color-accent {
+  color: var(--clr-accent);
+}
+
+.split {
+  display: flex;
+  flex-flow: column;
+  gap: var(--split-gap, calc(var(--spacer) * 3));
+
+  @media (width > 750px) {
+    flex-flow: row;
+    gap: var(--split-gap, var(--spacer));
+    align-items: center;
+    justify-content: space-between;
+
+    > * {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.content-block {
+  display: grid;
+
+  > :nth-child(2) {
+    margin-block: 1rem 2rem;
+  }
+}

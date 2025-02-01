@@ -1,0 +1,60 @@
+.summery-table {
+  --_gap: 5.875rem;
+
+  display: grid;
+  gap: calc(var(--_gap) / 2);
+
+  > * {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+
+    &::after {
+      content: '';
+
+      inline-size: 60%;
+      block-size: 1px;
+      margin-block-start: calc(var(--_gap) / 2 - 1rem);
+
+      background-color: var(--clr-accent);
+    }
+  }
+
+  dd {
+    grid-column: 1;
+    grid-row: 1;
+
+    font-family: var(--ff-accent);
+    font-size: var(--fs-800);
+    line-height: 1;
+    color: var(--clr-accent);
+
+    &::after {
+      content: 'K';
+      color: var(--clr-fg);
+    }
+  }
+
+  @container (width > 516px) {
+    grid-auto-flow: column;
+    gap: var(--_gap);
+    inline-size: fit-content;
+
+    > * {
+      justify-items: start;
+
+      &::after {
+        content: '';
+
+        grid-column: 2;
+        grid-row: 1 / span 2;
+
+        inline-size: 1px;
+        block-size: 100%;
+        margin-block-start: 0;
+
+        background-color: var(--clr-accent);
+      }
+    }
+  }
+}

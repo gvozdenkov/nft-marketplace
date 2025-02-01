@@ -1,0 +1,11 @@
+.hero {
+  --split-gap: clamp(2rem, -0.8447rem + 12.1372vw, 10.625rem);
+
+  > * {
+    container-type: inline-size;
+  }
+
+  .content-block {
+    margin-block-end: 4.5rem;
+  }
+}
