@@ -30,6 +30,7 @@
   --fw-700: 700;
 
   /* other globals */
+  --munu-padding: 1rem;
   --gutter: clamp(0.5rem, 0.1702rem + 1.4072vw, 1.5rem);
   --spacer: 1rem;
   --section-padding-block: clamp(2.5rem, 1.4281rem + 4.5734vw, 5.75rem);

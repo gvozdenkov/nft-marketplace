@@ -1,0 +1,58 @@
+.button {
+  --block-size: 3rem;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-block-size: var(--block-size);
+  padding-inline: 2em;
+  border-radius: var(--radius-sm);
+
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+  line-height: 1.2;
+  color: currentcolor;
+  text-decoration: none;
+
+  background-color: var(--clr-accent);
+
+  transition: var(--transition-sm);
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--clr-accent) 90%, transparent);
+  }
+}
+
+.button_type_vacuum {
+  color: var(--clr-fg);
+  background-color: transparent;
+
+  &:hover {
+    color: var(--clr-accent);
+    background-color: transparent;
+  }
+}
+
+.button_type_inverted {
+  background-color: transparent;
+}
+
+.icon-button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+
+  svg {
+    fill: var(--clr-fg);
+  }
+
+  &:hover {
+    svg {
+      fill: var(--clr-accent);
+      transition: var(--transition-sm);
+    }
+  }
+}
